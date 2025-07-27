@@ -1,0 +1,8 @@
+{
+    rewrites: [
+        {
+            source: "/vercel.json",
+            destination: "/api/vercel.json"
+        }
+    ]
+}

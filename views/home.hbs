@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trusted Suppliers for India's Street Food Vendors</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/javascript.js"></script>
+
+</head>
+<body>
+
+   <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                <span>StreetFood Connect</span>
+            </div>
+           <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/features">Features</a></li>
+                    <li><a href="/marketplace">Marketplace</a></li>
+                    <li><a href="/howitworks">How It Works</a></li>
+                    <li><a href="/testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+            <!-- <div class="auth-buttons">
+                <button class="btn btn-outline" onclick="openModal('loginModal')">Login</button>
+                <button class="btn btn-primary" onclick="openModal('signupModal')">Sign Up</button>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+   
+        <section class="hero" id="home" aria-label="Hero section for supplier platform">
+            <div class="container hero-content">
+                <h1>Trusted Suppliers for India's Street Food Vendors</h1>
+                <p>Connecting street food heroes with verified, reliable suppliers for quality ingredients at fair prices</p>
+                <div class="hero-buttons">
+ <button class="btn btn-primary" onclick="location.href='/marketplace'" aria-label="Find verified suppliers">
+  Find Suppliers
+</button>
+
+                    <button class="btn btn-outline" onclick="openModal('supplierSignupModal')" aria-label="Sign up to become a supplier">Become a Supplier</button>
+                </div>
+            </div>
+        </section>
+    <!-- Supplier Signup Modal -->
+    <div id="supplierSignupModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('supplierSignupModal')">&times;</span>
+            <h2>Become a Verified Supplier</h2>
+            <form id="supplierSignupForm">
+                <div class="form-group">
+                    <label for="supplierName">Business Name</label>
+                    <input type="text" id="supplierName" required>
+                </div>
+                <div class="form-group">
+                    <label for="supplierContact">Contact Person</label>
+                    <input type="text" id="supplierContact" required>
+                </div>
+                <div class="form-group">
+                    <label for="supplierEmail">Email</label>
+                    <input type="email" id="supplierEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="supplierPhone">Phone Number</label>
+                    <input type="tel" id="supplierPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="supplierLocation">Location</label>
+                    <input type="text" id="supplierLocation" placeholder="City, State" required>
+                </div>
+                <div class="form-group">
+                    <label for="supplierCategory">Primary Category</label>
+                    <select id="supplierCategory" required>
+                        <option value="">Select Category</option>
+                        <option value="spices">Spices & Masalas</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="dairy">Dairy Products</option>
+                        <option value="flour">Flour & Grains</option>
+                        <option value="oil">Cooking Oil</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="supplierDescription">Business Description</label>
+                    <textarea id="supplierDescription" placeholder="Tell us about your business and products"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Modals (hidden by default) -->
+    <div id="supplierSearchModal" class="modal" role="dialog" aria-hidden="true">
+        <!-- Modal content for finding suppliers -->
+    </div>
+
+    <div id="supplierSignupModal" class="modal" role="dialog" aria-hidden="true">
+        <!-- Modal content for supplier signup -->
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer content like contact info, links, etc. -->
+    </footer>
+
+  
+</body>
+</html>
+
+<a href="/logout">Logout</a>
